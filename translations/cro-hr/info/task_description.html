@@ -1,0 +1,47 @@
+<p>
+    Stjepanov govorni modul je pokvaren.
+    Taj modul je odgovoran za izgovaranje brojeva.
+    Da bi unio sve numeričke brojke u iznos, mora klikat, tako kad unosi velike brojke može mu uzeti dugo vremena.
+    Pomozi robotu da prikladno govori i uveća brzinu procesiranja brojeva tako da se napiše novi govorni modul.
+    Sve riječi u stringu moraju biti odvojeni za točno jedno mjesto, razmakom.
+    Budite oprezni sa razmacima -- teško je uočiti ako stavite dva razmaka umjesto jednog.
+</p>
+
+
+
+<p><strong>Ulaz: </strong>Broj kao cjelibroj (integer)</p>
+
+<p><strong>Izlaz: </strong>Tekstualna reprezentacija brojeva kao string</p>
+
+<div class="for_info_only">
+    <p>
+        <strong>Primjer:</strong>
+    </p>
+    
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: python">speechModule(4)=='four'
+speechModule(143)=='one hundred forty three'
+speechModule(12)=='twelve'
+speechModule(101)=='one hundred one'
+speechModule(212)=='two hundred twelve'
+speechModule(40)=='forty'
+</pre>
+{% else %}
+<pre class="brush: python">checkio(4)=='four'
+checkio(143)=='one hundred forty three'
+checkio(12)=='twelve'
+checkio(101)=='one hundred one'
+checkio(212)=='two hundred twelve'
+checkio(40)=='forty'
+</pre>
+{% endif %}
+</div>
+
+<p>
+    <strong>Gdje se ovo može primjeniti: </strong>
+    Ovaj je koncept može biti koristan u softveru za sintezu govora ili u sustavima automatskog izvještavanja.
+    Ovaj se sustav može koristiti i pri pisanju chatbota (robota za čavrljanje) numeriranjem riječi ili fraza
+    numeričke vrijednosti i imanje sustava za dohvaćanje odgovora na temelju tih vrijednosti.
+</p>
+
+<p><strong>Precondition: </strong>0 &lt; number &lt; 1000</p>
